@@ -22,7 +22,7 @@ class App extends Component {
       window.web3 = new Web3(window.web3.currentProvider)
     }
     else {
-      window.alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
+      window.alert('Non-Celo browser detected. You should consider trying MetaMask!')
     }
   }
 
@@ -52,7 +52,7 @@ class App extends Component {
       })
       this.setState({ loading: false})
     } else {
-      window.alert('SocialNetwork contract not deployed to detected network.')
+      window.alert('Celo Chat contract not deployed to detected network.')
     }
   }
 
